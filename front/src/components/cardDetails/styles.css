@@ -1,0 +1,12 @@
+.category .fas {
+    color: #ffc107;
+}
+
+.card-price {
+    font-size: 1.6rem;
+}
+
+.card-price span {
+    font-size: 1.6rem;
+    font-weight: bold;
+}

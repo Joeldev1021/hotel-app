@@ -1,0 +1,35 @@
+.card-hotel {
+    display: grid;
+    width: 70rem;
+    margin:2rem auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid rgb(235, 233, 233);
+    border-radius: 0.5rem;
+}
+
+.card-hotel:hover {
+    box-shadow: 0px 0px 32px -18px rgba(0,0,0,0.75);
+}
+.container-img {
+    width: 300px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.container-img img {
+    width: 100%;
+    
+}
+
+.card-name {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.card-description {
+    font-size: 1.6rem;
+    color: #868e96;
+}
