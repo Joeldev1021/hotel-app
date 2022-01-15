@@ -1,0 +1,7 @@
+.container-hotel {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}

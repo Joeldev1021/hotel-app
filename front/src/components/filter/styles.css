@@ -1,0 +1,32 @@
+.filter-category {
+    border: 1px solid #e5e5e5;
+    width: 20rem;
+    height: 40rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+.filter-category h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 1rem;
+    margin:0;
+}
+
+.filter-category p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin:0;
+}
+
+.filter-opcion {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
