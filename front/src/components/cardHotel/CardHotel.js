@@ -1,9 +1,9 @@
 import CardDetails from '../cardDetails/CardDetails';
 import './styles.css';
-const CardHotel = ({ hotel }) => {
+const CardHotel = ({ hotels }) => {
     return (
         <div className="container-card">
-            {hotel.map(h => {
+            {hotels.map(h => {
                 return (
                     <div key={h.hotel_id} className="card-hotel">
                         <div className="container-img">

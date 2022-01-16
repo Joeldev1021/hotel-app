@@ -5,3 +5,9 @@
   display: grid;
   grid-template-columns: 70% 30%;
 }
+
+@media screen and (max-width: 768px) {
+  .container-hotel {
+    grid-template-columns: 1fr;
+  }
+}

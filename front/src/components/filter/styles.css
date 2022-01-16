@@ -1,9 +1,10 @@
 .filter-category {
     border: 1px solid #e5e5e5;
     width: 20rem;
-    height: 40rem;
+    height: 50rem;
     padding: 1rem;
     margin: 2rem;
+    border-radius: 0.5rem;
 }
 .filter-category h3 {
     font-size: 1.6rem;
@@ -26,6 +27,27 @@
 }
 
 
+@media screen and (max-width: 900px) {
+    .filter-category {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .filter-category {
+        width: 22rem;
+        position: fixed;
+        background: white;
+        left: 110px;
+        transition: all ease-in-out 0.5s;
+        transform: translateX(100%);
+    }
+}
+
+.show {
+transform: translateX(0);
+}
 
 
 

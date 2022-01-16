@@ -11,7 +11,7 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 13,
+        "ecmaVersion": 12,
         "sourceType": "module"
     },
     "plugins": [
@@ -23,5 +23,6 @@
         "indent": ["error", 4],
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off"
+        
     }
 }

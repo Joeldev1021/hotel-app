@@ -9,6 +9,7 @@
     border-radius: 0.5rem;
 }
 
+
 .card-hotel:hover {
     box-shadow: 0px 0px 32px -18px rgba(0,0,0,0.75);
 }
@@ -20,7 +21,6 @@
 
 .container-img img {
     width: 100%;
-    
 }
 
 .card-name {
@@ -32,4 +32,24 @@
 .card-description {
     font-size: 1.6rem;
     color: #868e96;
+}
+
+@media screen and (max-width: 900px) {
+    .card-hotel {
+        width: 90%;
+        grid-template-columns: 40% 60%;
+        justify-content: center;
+        align-items: center;
+    }  
+    .container-img {
+        width: 95%;
+    } 
+}
+
+
+@media screen and (max-width: 500px) {
+    .card-hotel {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
 }
