@@ -14,7 +14,6 @@ function App () {
     useEffect(() => {
         setHotels(data);
     }, [data]);
-
     // filter hotels by category
     const handleFilterCategory = (category) => {
         console.log(category);
@@ -27,7 +26,13 @@ function App () {
     };
     // filter hotels by price
     const handleFilterPrice = (price) => {
-        console.log(price);
+        // const max = Math.max(...price);
+        if (price.length === 0) {
+            setHotels(data);
+        } else {
+            const newHotel = data.filter(hotel => price.includes(hotel.price));
+            setHotels(newHotel);
+        }
     };
 
     if (isError) {

@@ -13,9 +13,9 @@ const FilterHotel = ({ handleFilterCategory, handleFilterPrice }, ref) => {
         const value = parseInt(e.target.value);
         if (value > 5) { /// is price
             if (e.target.checked) {
-                handleFilterPrice(value);
+                setPrices([...prices, value]);
             } else {
-                console.log('unchecked');
+                setPrices(prices.filter(price => price !== value));
             }
         } else { /// is category
             if (e.target.checked) {
@@ -26,13 +26,15 @@ const FilterHotel = ({ handleFilterCategory, handleFilterPrice }, ref) => {
         }
     };
 
-    // const handleCheckboxPrice = (e) => {
-    //     handleFilterPrice(e.target.value);
-    // };
-
+    // filter hotels by category
     useEffect(() => {
         handleFilterCategory(categorys);
     }, [categorys]);
+
+    // filter hotels by price
+    useEffect(() => {
+        handleFilterPrice(prices);
+    }, [prices]);
 
     return (
         <div ref={ref} className="filter-category">
